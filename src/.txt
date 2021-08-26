@@ -1,0 +1,5 @@
+                    <ReactLink className="btn btn-info mx-1" to="/">Home</ReactLink>
+                    <ReactLink className="btn btn-info mx-1" to="/register">Registration</ReactLink>
+                    <ReactLink className="btn btn-info mx-1" to="/login">Login</ReactLink>
+                    <ReactLink className="btn btn-info mx-1" to="/profile">Profile</ReactLink>
+                     <ReactLink className="nav-item" className="nav-link active" aria-current="page"to="/logout">Logout</ReactLink>

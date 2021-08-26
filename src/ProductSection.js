@@ -1,6 +1,7 @@
-import Card from "./Card"
+import Section from "./Section"
 
-function CardSection(props) {
+
+function ProductSection(props) {
     return (
         <div className="container">
             <div className="row">
@@ -8,12 +9,12 @@ function CardSection(props) {
                 props.content.map(
                     (location) => {
                     return (
-                        <div className="col-12 col-lg-3 mb-3">
-                        <Card 
-                            image={location.image}
-                            productName={location.productName}
-                            category={location.category}
-                            soldBy={location.soldBy}
+                        <div className="col-12 col-md-3 mb-3">
+                        <Section 
+                            img={location.img}
+                            book={location.book}
+                            author={location.author}
+                            genre={location.genre}
                             price={location.price}
                         />
                         </div>
@@ -26,4 +27,4 @@ function CardSection(props) {
     )
 }
 
-export default CardSection;
+export default ProductSection

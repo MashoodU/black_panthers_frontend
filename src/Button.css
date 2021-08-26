@@ -1,0 +1,14 @@
+.btn-dark {
+    background-color:mediumaquamarine;
+    border-color:  mediumaquamarine ;
+}
+.btn-outline-dark {
+    background-color: mediumaquamarine;
+    margin-right: 10px;
+    border-color: rgba(255, 255, 255, 0.281);
+    color: white;
+}
+.btn-outline-light {
+    background-color: mediumaquamarine;
+    border-color: mediumaquamarine;
+}

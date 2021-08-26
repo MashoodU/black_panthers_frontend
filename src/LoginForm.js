@@ -32,10 +32,10 @@ function LoginForm() {
         const errors = [];
 
         // 1. Validate the fields
-        if(!validateEmail(emailField.value)) {
+        if(emailField.value.length === 0) {
             errors.push("Please enter a valid email address");
         }
-        if(!validatePassword(passwordField.value)) {
+        if(passwordField.value.length === 0) {
             errors.push("Please enter a valid password");
         }
 
@@ -50,7 +50,7 @@ function LoginForm() {
             formData.append('email', emailField.value);
             formData.append('password', passwordField.value);
 
-            fetch(`${process.env.REACT_APP_API_ENDPOINT}/user/login`, {
+            fetch(`${process.env.REACT_APP_BACKEND}/users/login`, {
                 method: 'POST',
                 // headers: {"Content-Type": "application/json"},
                 body: formData

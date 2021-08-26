@@ -105,7 +105,6 @@ const RegistrationForm = () => {
         }
 
     }
-
     return (
         <div className="container" style={{"marginTop": "5em", "max-width": "40em"}}>
             

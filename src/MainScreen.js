@@ -2,71 +2,90 @@ import CardSection from './CardSection.js';
 import NavBar from './NavBar.js';
 import Hero from './Hero.js';
 import MediaSection from './MediaSection.js';
-import CounterButton from './CounterButton.js';
+import Card from './Card.js';
+import ProductSection from './ProductSection.js';
+import Header from './Header';
+import Section from './Section.js';
+import Button from './Button.js';
+import Footer from './Footer.js';
+import Books from './Books.js';
 
-const travelLocations = [
-  {
-    image: "https://images.unsplash.com/photo-1628887391400-0c8cc8f3fac1?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    title: "Berchtesgaden, Germany",
-    description: "Lovely travel destination",
-    buttonLabel: "Visit",
-    buttonLink: "https://..."
-  },
-  {
-    image: "https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-    title: "Florence, Italy",
-    description: "Lovely travel destination",
-    buttonLabel: "Visit",
-    buttonLink: "https://..."
-  },
-  {
-    image: "https://images.unsplash.com/photo-1623674587543-9c7564de99d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80",
-    title: "Giza, Egypt",
-    description: "Lovely travel destination",
-    buttonLabel: "Visit",
-    buttonLink: "https://..."
-  },
-  {
-    image: "https://images.unsplash.com/photo-1548786811-dd6e453ccca7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGV0cmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    title: "Petra, Jordan",
-    description: "Lovely travel destination",
-    buttonLabel: "Visit",
-    buttonLink: "https://..."
-  }
-];
 
-const content = [
+const products = [
   {
-      title: "First featurette heading. It’ll blow your mind.",
-      description: "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
-      picture: "./Dubai1.jpg",
+    img: "Eat.jpg",
+    book: "Eat a Peach: A Memoir",
+    genre: "Biography, Cookbook",
+    link: "",
+  },
+  
+  {
+    img: "Spider.jpg",
+    book: "The Girl in the Spider's Web",
+    genre: " Novel, Thriller, Crime novel, Mystery",
+    link: "",
+  },
+  
+  {
+    img: "Everyone.jpg",
+    book: "Everyone Knows Your Mother Is a Witch",
+    genre: " Historical Fiction, War story",
+    link: "Some Link",
+  },
+  
+  {
+    img: "Fake.jpg",
+    book: "Fake Accounts",
+    genre: "Satire, Political fiction, Urban fiction",
+    link: "Some Link",
   },
   {
-      title: "Second featurette heading. It’ll blow your mind.",
-      description: "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
-      picture: "./Dubai2.jpg",
+    img: "Longings.jpg",
+    book: "The Book of Longings",
+    genre: "Historical Fiction",
+    link: "Some Link",
   },
+  
   {
-      title: "Third featurette heading. It’ll blow your mind.",
-      description: "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
-      picture: "./Dubai3.jpg" ,
+    img: "Klara.jpg",
+    book: "Klara and the Sun",
+    genre: "Science fiction",
+    link: "Some Link",
+  },
+  
+  {
+    img: "TMFT.jpg",
+    book: "The Faraway Tree",
+    genre: "Fantasy",
+    link: "Some Link",
+  },
+  
+  {
+    img: "ToKill.jpg",
+    book: "To Kill a Mockingbird",
+    genre: "Coming-of-age story, Historical Fiction",
+    link: "Some Link",
   },
 ]
+  
+
+
+
 
 function MainScreen() {
   return (
     <div>
-      <NavBar logo="BTA"/>
-      <Hero 
-        title="Bootstrap Travel Agency"
-        description="Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins."
-        buttonLabel1="Book Now"
-        buttonLabel2="Learn More"
-      />
-      <CardSection content={travelLocations}/>
-      <MediaSection content={content}/>
-      <CounterButton></CounterButton>
+      <NavBar log/>
+      <Hero title="Ameoba Books"
+        description="Shop, Sell and Trade for all kinds of books with members of the community who have come together with their love of book reading in the Middle East."
+        buttonLabel1="Shop"
+        buttonLabel2="Learn More"/>
+      <Header title='Featured Books' description=""/>
+      <ProductSection content={products}/>
+      <Footer/>
+      
 
+        
     </div>
   );
 }
